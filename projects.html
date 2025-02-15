@@ -27,8 +27,11 @@
         }
         .img-custom {
             width: 50%; /* Shrink image size by half */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 200px; /* Set a maximum height */
             border-radius: 15px; /* Softer corners */
             margin-top: 20px; /* Add margin to avoid touching the navigation bar */
+            object-fit: cover; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -67,7 +70,9 @@
             </div>
             <div class="tab-pane" id="project3" role="tabpanel" aria-labelledby="project3-tab">
                 <div class="content">
-                    <p><strong>Project 3:</strong> Description of project 3.</p>
+                    <img src="assets/brain_constantspeed.jpg" class="img-fluid mb-4 img-custom" alt="Brain Constant Speed">
+                    <p><strong>In my undergraduate lab, I worked on improving both the speed and quality of ultrasound image reconstruction by optimizing and designing algorithms in MATLAB. A key aspect of this work involved developing an approach to incorporate a sound speed map into the reconstruction process. By accounting for variations in sound speed, this method provided a more accurate estimate of where transducer-received signals originated, ultimately refining image quality.</strong></p>
+                    <p>This project required expertise in signal processing, algorithm development, and computational optimization to enhance the efficiency and accuracy of ultrasound imaging. My contributions helped advance real-time imaging capabilities, improving the potential for more precise diagnostic applications.</p>
                 </div>
             </div>
             <!-- Add more tab panes as needed -->
