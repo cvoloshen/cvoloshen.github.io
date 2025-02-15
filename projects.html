@@ -25,6 +25,11 @@
             max-width: 1200px; /* Set a maximum width */
             margin: 20px; /* Add margin to avoid cutting off content */
         }
+        .img-custom {
+            width: 50%; /* Shrink image size by half */
+            border-radius: 15px; /* Softer corners */
+            margin-top: 20px; /* Add margin to avoid touching the navigation bar */
+        }
     </style>
 </head>
 <body class="d-flex justify-content-center align-items-center">
@@ -42,21 +47,25 @@
                 <a class="nav-link" id="project3-tab" data-toggle="tab" href="#project3" role="tab" aria-controls="project3" aria-selected="false">Project 3</a>
             </li>
             <!-- Add more tabs as needed -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
         </ul>
         <div class="tab-content" id="projectTabsContent">
-            <div class="tab-pane fade show active" id="project1" role="tabpanel" aria-labelledby="project1-tab">
+            <div class="tab-pane show active" id="project1" role="tabpanel" aria-labelledby="project1-tab">
                 <div class="content">
-                    <img src="assets/robotarm.jpg" class="img-fluid mb-4" alt="Robot Arm">
+                    <img src="assets/robotarm.jpg" class="img-fluid mb-4 img-custom" alt="Robot Arm">
                     <p><strong>Degenerative disc disease (DDD) remains a significant challenge in spinal healthcare, with tissue-engineered artificial discs offering a promising treatment approach. However, a critical limitation of current solutions is the inability to maintain the placement of these discs within the intervertebral space long enough for full biological integration.</strong></p>
                     <p>To address this issue, I am working as part of a multidisciplinary design team to develop a biodegradable fixation cage that stabilizes the tissue-engineered disc while preserving the natural biomechanics of the spine. My role in this project involves designing and implementing a testing apparatus and experimental protocol to verify and validate the effectiveness of our cage design. This work integrates key engineering skills, including 3D CAD design, 3D printing, and robotics programming, to ensure the success of the proposed solution.</p>
                 </div>
             </div>
-            <div class="tab-pane fade" id="project2" role="tabpanel" aria-labelledby="project2-tab">
+            <div class="tab-pane" id="project2" role="tabpanel" aria-labelledby="project2-tab">
                 <div class="content">
-                    <p><strong>Project 2:</strong> Description of project 2.</p>
+                    <p><strong>I am currently developing an autonomous robotic platform capable of performing advanced computer vision tasks, including object detection, tracking, and navigation. This project involves practical experience in programming microcontrollers (Raspberry Pi Pico W) and embedded systems (Raspberry Pi Zero), system integration, and problem-solving through the implementation of the Sparkfun XRP robotic platform.</strong></p>
+                    <p>The project explores key aspects of cyber-physical system architectures, computational and embedded systems, and cloud computing platforms. Additionally, it involves applying various computer programming languages and paradigms, integrating wired and wireless communication protocols, and working with sensors, actuators, and sensor networks. Signal processing and computer vision techniques are also fundamental to the system's functionality, enabling the robot to interpret and respond to its environment effectively.</p>
                 </div>
             </div>
-            <div class="tab-pane fade" id="project3" role="tabpanel" aria-labelledby="project3-tab">
+            <div class="tab-pane" id="project3" role="tabpanel" aria-labelledby="project3-tab">
                 <div class="content">
                     <p><strong>Project 3:</strong> Description of project 3.</p>
                 </div>
@@ -64,15 +73,6 @@
             <!-- Add more tab panes as needed -->
         </div>
     </div>
-
-    <script>
-        $(document).ready(function () {
-            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                var target = $(e.target).attr("href");
-                $(target).hide().fadeIn(500);
-            });
-        });
-    </script>
 
 </body>
 </html>
