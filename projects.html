@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Voloshen's Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f9f9f9; /* Slightly off-white background for the page */
+        }
+        .content {
+            font-size: 1.25rem; /* Larger font size */
+        }
+        .card-custom {
+            background-color: #f5f3ee; /* Slightly off-white background for the card */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%; /* Make the card wider */
+            max-width: 1200px; /* Set a maximum width */
+            margin: 20px; /* Add margin to avoid cutting off content */
+        }
+        .tab-content > .tab-pane {
+            display: none;
+        }
+        .tab-content > .active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+
+    <div class="card card-custom text-center">
+        <h1 class="mb-4">My Projects</h1>
+        <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="project1-tab" data-toggle="tab" href="#project1" role="tab" aria-controls="project1" aria-selected="true">Project 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="project2-tab" data-toggle="tab" href="#project2" role="tab" aria-controls="project2" aria-selected="false">Project 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="project3-tab" data-toggle="tab" href="#project3" role="tab" aria-controls="project3" aria-selected="false">Project 3</a>
+            </li>
+            <!-- Add more tabs as needed -->
+        </ul>
+        <div class="tab-content" id="projectTabsContent">
+            <div class="tab-pane fade show active" id="project1" role="tabpanel" aria-labelledby="project1-tab">
+                <div class="content">
+                    <p><strong>Degenerative disc disease (DDD) remains a significant challenge in spinal healthcare, with tissue-engineered artificial discs offering a promising treatment approach. However, a critical limitation of current solutions is the inability to maintain the placement of these discs within the intervertebral space long enough for full biological integration.</strong></p>
+                    <p>To address this issue, I am working as part of a multidisciplinary design team to develop a biodegradable fixation cage that stabilizes the tissue-engineered disc while preserving the natural biomechanics of the spine. My role in this project involves designing and implementing a testing apparatus and experimental protocol to verify and validate the effectiveness of our cage design. This work integrates key engineering skills, including 3D CAD design, 3D printing, and robotics programming, to ensure the success of the proposed solution.</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="project2" role="tabpanel" aria-labelledby="project2-tab">
+                <div class="content">
+                    <p><strong>Project 2:</strong> Description of project 2.</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="project3" role="tabpanel" aria-labelledby="project3-tab">
+                <div class="content">
+                    <p><strong>Project 3:</strong> Description of project 3.</p>
+                </div>
+            </div>
+            <!-- Add more tab panes as needed -->
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                var target = $(e.target).attr("href");
+                $(target).hide().fadeIn(500);
+            });
+        });
+    </script>
+
+</body>
+</html>
