@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +29,15 @@
             width: 90%; /* Make the card wider */
             max-width: 1200px; /* Set a maximum width */
             margin: 20px; /* Add margin to avoid cutting off content */
+        }
+        @media (max-width: 768px) {
+            .resume-container {
+                height: 60vh; /* Adjust height for smaller screens */
+            }
+            .card-custom {
+                width: 100%; /* Make the card full width on smaller screens */
+                padding: 10px; /* Reduce padding on smaller screens */
+            }
         }
     </style>
 </head>
