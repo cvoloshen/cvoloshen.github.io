@@ -21,6 +21,11 @@
             height: 80vh;
             border: none;
         }
+        .resume-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
         .card-custom {
             background-color: #f5f3ee; /* Slightly off-white background for the card */
             padding: 20px;
@@ -37,6 +42,11 @@
             .card-custom {
                 width: 100%; /* Make the card full width on smaller screens */
                 padding: 10px; /* Reduce padding on smaller screens */
+            }
+        }
+        @media (max-width: 576px) {
+            .resume-container {
+                height: 50vh; /* Further adjust height for smaller screens */
             }
         }
     </style>
@@ -59,7 +69,7 @@
 
         <!-- Resume Section -->
         <div class="resume-container">
-            <iframe src="assets/Voloshen_resumeonline1.pdf" class="resume-container"></iframe>
+            <iframe src="assets/Voloshen_resumeonline1.pdf"></iframe>
         </div>
     </div>
 
